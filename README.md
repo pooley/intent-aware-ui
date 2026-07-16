@@ -2,7 +2,7 @@
 
 > Interfaces should understand intent, not just clicks.
 
-Intent-Aware UI is an interaction paradigm that introduces **intent-aware targets**.
+**Intent-Aware UI is an open research initiative exploring the future of human-computer interaction through intent-aware interfaces.**
 
 Instead of waiting for a click to react, interfaces progressively interpret the user's intention and subtly assist the interaction while preserving predictability and control.
 
@@ -141,15 +141,24 @@ Feedback and discussion are welcome.
 
 ## Documentation
 
+Start with the **[Documentation Index](docs/README.md)** for reading paths suited to different readers (newcomer, designer, researcher, implementer, contributor).
+
 | Document | Description |
 |----------|-------------|
-| Manifesto | Why interaction models should evolve |
-| Specification | Definition of the interaction model |
-| Design Principles | Rules for designing intent-aware interfaces |
-| Accessibility | Motor accessibility considerations |
-| Research | Scientific background and references |
-| FAQ | Common questions |
-| Roadmap | Planned milestones |
+| [Manifesto](docs/manifesto.md) | Why current interaction models are reaching their limits |
+| [Glossary](docs/glossary.md) | Official terminology reference |
+| [Architecture](docs/architecture.md) | The whole concept, in one page |
+| [Specification](docs/specification.md) | Definition of the interaction model |
+| [Concept Map](docs/concept-map.md) | How vocabulary, core concepts and principles relate |
+| [Design Principles](docs/design-principles.md) | Rules for designing intent-aware interfaces |
+| [Accessibility](docs/accessibility.md) | Motor variability and inclusive design |
+| [FAQ](docs/faq.md) | Common questions |
+| [Research](docs/research.md) | Scientific background and references |
+| [Prior Art](docs/prior-art.md) | Catalog of related existing techniques |
+| [Roadmap](docs/roadmap.md) | Planned milestones |
+| [Open Questions](docs/open-questions.md) | What the project intentionally doesn't answer yet |
+
+The Manifesto argues *why* change is needed. The Specification defines *how*. Neither depends on the other.
 
 ---
 
