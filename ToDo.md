@@ -146,6 +146,18 @@ Before the first public push. All checks performed, not assumed:
 - `.gitignore` is now empty (the `./conv.md` line was removed along with the file). The untracked `.claude/settings.json` (local tool permissions, not project content) will get swept into a `git add -A` unless re-ignored — worth deciding before staging.
 - `origin` remote is `github.com/pooley/intent-aware-ui`; current branch is `develop` (a `main` branch also exists) — confirm that's the intended push target.
 
+## Root README refresh (post-push, 2026-07-16)
+
+The project owner flagged the root `README.md` as outdated — it predated the terminology freeze and the Motor Variability reframe. Fixed:
+
+- [x] "Core Principles" was a casual 7-bullet paraphrase that didn't match Specification §2 (6 named principles, missing Reversibility entirely) — replaced with the actual 6, linked to the Specification
+- [x] "Interaction Model" heading/diagram used the pre-freeze step names ("Pointer movement", "Click confirmation", "Action") and the wrong term — this is the **Interaction Lifecycle** (Specification §3); "Interaction Model" is a different, broader Glossary term. Retitled and aligned the diagram to the spec's actual steps
+- [x] "Accessibility" section still listed conditions (Parkinson's, Essential tremor, etc.) as its framing — the exact "us vs. them" framing the Manifesto and `docs/accessibility.md` deliberately moved away from. Replaced with the Motor Variability framing and a link out
+- [x] "Status" section said the interaction model was "being defined" — stale now that it's frozen at v0.1.0; updated to point at Roadmap/Open Questions
+- [x] Added inline links throughout (Intent Field, Confidence, Engagement Field, Activation, Interaction Lifecycle, Fitts' Law, Manifesto, Architecture, CONTRIBUTING) per the project owner's request while already editing
+
+**Bug caught and fixed at the source:** the 8 "★ Core Concept" glossary headings (e.g. `## Intent Field — ★ Core Concept`) produced fragile, ugly GitHub anchors (`#intent-field---core-concept`, triple-hyphen from the stripped em-dash and star) — almost shipped broken anchors in the README before catching it. Moved the `★ **Core Concept**` badge out of the heading and onto its own line below, so anchors are back to simple `#intent-field`, `#confidence`, etc. `docs/glossary.md`'s intro sentence still describes the marking accurately, no change needed there.
+
 ## Phase 2 — Visual identity
 
 Diagram priority per the project owner: model diagrams first (they're what will actually stress-test the spec), branding last.

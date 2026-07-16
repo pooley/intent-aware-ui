@@ -16,7 +16,9 @@ Eight of these terms are marked **★ Core Concept** — they form the frozen li
 
 # A
 
-## Activation — ★ Core Concept
+## Activation
+
+★ **Core Concept**
 
 The moment an interaction is confirmed and the intended action is executed.
 
@@ -44,7 +46,9 @@ Examples include:
 
 # C
 
-## Confidence — ★ Core Concept
+## Confidence
+
+★ **Core Concept**
 
 A continuous value representing how likely the system believes the user intends to interact with a specific target.
 
@@ -66,7 +70,9 @@ Rather than immediately switching between states, confidence should increase and
 
 # E
 
-## Engagement Field — ★ Core Concept
+## Engagement Field
+
+★ **Core Concept**
 
 The inner area surrounding an interactive target.
 
@@ -78,7 +84,9 @@ Within the Engagement Field, stronger assistance may be applied while preserving
 
 # I
 
-## Intent — ★ Core Concept
+## Intent
+
+★ **Core Concept**
 
 The user's probable objective before an interaction is confirmed.
 
@@ -111,7 +119,9 @@ It only estimates probability.
 
 ---
 
-## Intent Field — ★ Core Concept
+## Intent Field
+
+★ **Core Concept**
 
 The invisible area surrounding an interactive element used to estimate user intent.
 
@@ -165,7 +175,9 @@ Predictability always takes priority over aggressive assistance.
 
 ---
 
-## Progressive Assistance — ★ Core Concept
+## Progressive Assistance
+
+★ **Core Concept**
 
 The principle that assistance increases gradually as confidence grows.
 
@@ -177,7 +189,9 @@ Transitions must remain smooth, predictable and reversible.
 
 # S
 
-## Safe Zone — ★ Core Concept
+## Safe Zone
+
+★ **Core Concept**
 
 A neutral area separating two or more interactive elements.
 
@@ -224,7 +238,9 @@ Reducing the effort required for target acquisition is one of the primary goals 
 
 # U
 
-## User Agency — ★ Core Concept
+## User Agency
+
+★ **Core Concept**
 
 The principle that users always remain in control of their interactions.
 

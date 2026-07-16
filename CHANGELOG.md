@@ -63,6 +63,12 @@ The format follows [Keep a Changelog](https://keepachangelog.com/). Versions tra
 - ToDo.md: fixed a dead link to `conv.md` (removed from the repo ahead of the public push) that also violated its own "no internal-only references" rule
 - Standardized every doc's version header from `0.1` to `0.1.0`, matching the `[0.1.0]` tag already used in this file
 
+### Fixed (root README refresh, post-push)
+
+- "Core Principles" now matches the Specification's actual 6 principles (was a stale 7-item paraphrase missing Reversibility); "Interaction Model" renamed to "Interaction Lifecycle" with the correct step names; "Accessibility" section reframed around Motor Variability instead of a condition list; "Status" section updated to reflect the v0.1.0 freeze
+- Added inline links to Glossary/Specification/Manifesto/Architecture/Research/FAQ/CONTRIBUTING throughout
+- Glossary: moved the "★ Core Concept" badge from the heading line to the line below, on all 8 entries — the old `## Term — ★ Core Concept` heading produced a broken, triple-hyphenated GitHub anchor instead of the expected `#term`
+
 ---
 
 **Documentation frozen at v0.1.0.** No further spec/doc changes planned until a working prototype produces real feedback.

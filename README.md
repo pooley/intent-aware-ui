@@ -33,7 +33,7 @@ make interactions smarter.
 
 ## The Idea
 
-Every interactive element owns an invisible **Intent Field**.
+Every interactive element owns an invisible **[Intent Field](docs/glossary.md#intent-field)**.
 
 ```
 +------------------------------------+
@@ -50,7 +50,7 @@ Every interactive element owns an invisible **Intent Field**.
 +------------------------------------+
 ```
 
-As pointer confidence increases, the interface progressively adapts.
+As pointer [confidence](docs/glossary.md#confidence) increases, the interface progressively adapts — entering the **[Engagement Field](docs/glossary.md#engagement-field)** allows stronger assistance while preserving predictability.
 
 Not to take control.
 
@@ -60,68 +60,60 @@ To reduce effort.
 
 ## Core Principles
 
-Intent-Aware UI is built around a few principles.
+Intent-Aware UI is built around six principles, defined in full in the [Specification](docs/specification.md).
 
-- Intent before action
-- Progressive assistance
-- Predictable interactions
-- No surprise behaviours
-- User always remains in control
-- Accessibility by design
-- Assistance should remain subtle
+- User Agency
+- Predictability
+- Progressive Assistance
+- Accessibility by Design
+- Reversibility
+- Explicit Activation
 
 ---
 
-## Interaction Model
+## Interaction Lifecycle
 
 ```
-Pointer movement
+Idle
 
 ↓
 
-Intent detection
+Intent Detection
 
 ↓
 
-Confidence estimation
+Confidence Estimation
 
 ↓
 
-Progressive assistance
+Progressive Assistance
 
 ↓
 
-Click confirmation
+Activation
 
 ↓
 
-Action
+Completed
 ```
 
-The click becomes the confirmation of an already understood intention.
+[Activation](docs/glossary.md#activation) is the confirmation of an already understood intention — see the full [Interaction Lifecycle](docs/specification.md#3-interaction-lifecycle) in the Specification.
 
 ---
 
 ## Why not simply enlarge buttons?
 
-Increasing target size helps.
+Increasing target size helps — it's one of the best-established results in [HCI research](docs/research.md#fitts-law).
 
 Intent-Aware UI complements existing accessibility practices rather than replacing them.
 
-Instead of changing layouts, it dynamically adapts interaction according to user intent.
+Instead of changing layouts, it dynamically adapts interaction according to user intent. See the [FAQ](docs/faq.md) for more questions like this one.
 
 ---
 
 ## Accessibility
 
-Intent-Aware UI has the potential to improve interactions for users experiencing:
-
-- Parkinson's disease
-- Essential tremor
-- Age-related motor decline
-- Temporary motor impairments
-- High-density professional interfaces
-- Trackpad fatigue
+Human motor precision is never constant — it varies with age, fatigue, stress, illness, and even the input device in hand. See [Accessibility](docs/accessibility.md) for the full reasoning, including concrete cases from Parkinson's to simply carrying a child.
 
 The goal is not to create a special accessibility mode.
 
@@ -131,9 +123,9 @@ The goal is to build interfaces that naturally require less precision.
 
 ## Status
 
-⚠️ This project is currently a research initiative.
+The interaction model is defined: documentation is frozen at **v0.1.0**, pending a working prototype.
 
-The interaction model is being defined before any implementation.
+See the [Roadmap](docs/roadmap.md) for what comes next (visual identity, prototypes, reference implementation) and [Open Questions](docs/open-questions.md) for what remains genuinely unresolved.
 
 Feedback and discussion are welcome.
 
@@ -166,7 +158,7 @@ The Manifesto argues *why* change is needed. The Specification defines *how*. Ne
 
 Intent-Aware UI is not a component library.
 
-It is a proposal for a new interaction paradigm.
+It is a proposal for a new interaction paradigm — see the [Manifesto](docs/manifesto.md) for why, and the [Architecture](docs/architecture.md) for how it all fits together.
 
 Just as responsive design adapted interfaces to screen sizes,
 
@@ -178,7 +170,7 @@ Intent-Aware UI aims to adapt interactions to human intention.
 
 The project is currently in its conceptual phase.
 
-Discussions, critiques and research references are highly encouraged.
+Discussions, critiques and research references are highly encouraged — see [CONTRIBUTING](CONTRIBUTING.md).
 
 ---
 
